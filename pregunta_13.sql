@@ -43,4 +43,4 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT LEFT(K0, 1), avg(c12) FROM tbl1 WHERE c13 > 400 GROUP BY LEFT(K0, 1);
+SELECT LEFT(K0, 1), AVG(c12) as "avg(c12)" FROM tbl1 WHERE c13 > 400 GROUP BY LEFT(K0, 1);

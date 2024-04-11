@@ -41,4 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT c23 AS YEAR, avg(c21)  FROM tbl2 GROUP BY c23;
+SELECT c23 AS YEAR, AVG(c21)  as "avg(c21)" FROM tbl2 GROUP BY c23;

@@ -43,6 +43,4 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 
 --
-SELECT LEFT(K0, 1), MAX(c12), min(c12) 
-FROM tbl1
-GROUP BY LEFT(K0, 1);
+SELECT LEFT(K0, 1), MAX(c12), MIN(c12) AS "min(c12)" FROM tbl1 GROUP BY LEFT(K0, 1);
