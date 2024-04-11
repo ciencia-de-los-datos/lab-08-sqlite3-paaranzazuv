@@ -44,3 +44,6 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
+
+SELECT LEFT(tbl1.K0, 1) AS letra_K0, avg(tbl2.c21) FROM tbl1 JOIN tbl2 ON tbl1.K0 = tbl2.K0 WHERE tbl1.c13 > 400
+GROUP BY LEFT(tbl1.K0, 1);
