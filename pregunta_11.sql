@@ -29,7 +29,7 @@
 --    c25 CHAR(5)
 --
 --  Escriba una consulta que retorne el total 
---  de registros de la tabla tbl1 para el ano
+--  de registros de la tabla tbl1 para el año
 --  2018
 --
 --  Rta/
@@ -38,4 +38,13 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT COUNT(*) as "CANT" FROM tbl1 WHERE YEAR(c14) = 2018;
+-- SELECT COUNT(*) FROM tbl1 WHERE strftime("%Y",c14) = 2018;
+SELECT
+    strftime("%Y",c14),
+    COUNT(*)
+    
+FROM
+    tbl1
+WHERE
+   strftime("%Y",c14) = "2018";
+
