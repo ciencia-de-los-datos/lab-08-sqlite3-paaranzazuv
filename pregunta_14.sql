@@ -47,7 +47,7 @@
 
 SELECT
     tbl1.K0,
-    AVG(tbl2.c21) AS avg_c21
+    AVG(tbl2.c21) AS "avg_c21"
 FROM
     tbl1
 JOIN
